@@ -51,10 +51,6 @@
         badge.className = "badge bg-danger me-2";
         badge.innerHTML = "Svarīgi";
       }
-      if (priority === "vidēji") {
-        badge.className = "badge bg-warning text-dark me-2";
-        badge.innerHTML = "Vidēji";
-      }
       if (priority === "zema") {
         badge.className = "badge bg-secondary me-2";
         badge.innerHTML = "Zema";
@@ -65,7 +61,7 @@
       left.appendChild(span);
 
       let deleteBtn = document.createElement("button");
-      deleteBtn.className = "btn btn-dark btn-sm";
+      deleteBtn.className = "btn btn-outline-dark btn-sm";
       deleteBtn.innerHTML = "Dzēst";
       deleteBtn.onclick = function() {
         li.remove();
